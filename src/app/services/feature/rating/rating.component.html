@@ -1,0 +1,16 @@
+<ng-template #t let-fill="fill">
+    <i class="bi-heart-fill">
+      <ng-container *ngIf="fill > 0">
+        <i class="bi-heart-fill filled" [style.width.%]="fill"></i>
+      </ng-container>
+    </i>
+  </ng-template>
+  
+  <ngb-rating
+    [(rate)]="rating"
+    [starTemplate]="t"
+    [readonly]="isReadonly"
+    [max]="5"
+    [ariaValueText]="ariaValueText">
+  </ngb-rating>
+  

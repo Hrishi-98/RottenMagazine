@@ -1,0 +1,31 @@
+<div class="login-container">
+    <img class="apple" src="anime_test.png">
+    <div class="logo">
+        Movie Magazine
+    </div>
+    <div class="desc">
+        As the world’s most trusted and recognized source of movie and TV reviews, Movie Magazine and the meter
+        score have served as the most reliable home of entertainment recommendations for over 25 years. We offer
+        authentic reactions in a broad range of reviews from professional critics and everyday fans alike in addition to
+        helpful, easily digestible what-to-watch roundups. Not only that, but we help build anticipation and provide
+        fans with access to first look entertainment previews, trailers, behind-the-scenes exclusives, and more, as well
+        as original editorial features, fun and informative video series, and even books and games.
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname" >UserName</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="uname">
+        </div>
+        <div class="form-group">
+            <label for="password" >Password</label>
+            <input type="password" name="password" class="form-control"  [(ngModel)]="password" (keyup.enter)="onLogin()">
+        </div>
+        <div class="btn-container" >
+            <div class = "error">{{errorMsg}}</div>
+            <button class=" btn btn-dark" (click)="onLogin()">
+                Login
+            </button>
+        </div>
+        
+    </div>
+</div>

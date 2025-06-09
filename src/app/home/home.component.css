@@ -1,0 +1,92 @@
+.home-container{
+    display: flex;
+    
+    .all-movies {
+        width: 75%;
+        min-height: calc(100vh - 80px);
+        border-right: 1px solid rgb(183, 215, 26);
+        padding: 20px 40px;
+        font-family: 'Times New Roman', Times, serif;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid rgb(183, 215, 26); 
+            padding-left: 10px;
+        }
+        .view-all{
+            color: rgb(132, 157, 6); 
+            cursor: pointer;
+        }
+        .movies-tumbnail{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            .movie{
+                width: 250px;
+                .cover{
+                    width: 190px;
+                    cursor: pointer;
+                    
+                    img{
+                        border-radius: 5px;
+                        
+                    }
+                    
+                }
+                .detail{
+                    width:100px;
+                    .name{
+                        font-weight: bold;
+                        height: 50px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                }
+            }
+         
+            
+            
+        }
+    }
+    .popular-movies{
+        width: 25%;
+        min-height: calc(100vh-80px);
+        padding: 20px 40px;
+        font-family: 'Times New Roman', Times, serif;
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid rgb(183, 215, 26); 
+            padding-left: 10px;
+        }
+        .movies{
+            .movie{
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+                .name{
+                    font-weight:bold ;
+                    cursor: pointer;
+                }
+            }
+        }
+        .view-all{
+            color: rgb(119, 143, 3); 
+            cursor: pointer;
+            text-align: right;
+        }
+        
+    }
+}
+
+
+

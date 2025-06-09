@@ -1,0 +1,99 @@
+.movie-container{
+    width: 1400px;
+    margin: 0 auto;
+    .top {
+        display: flex;
+        .left{
+            width: 450px;
+
+            .name {
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 100px;
+            }
+            .rating{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+                margin-left: 100px;
+                .rating-value{
+                   margin-left: 10px;
+                   margin-bottom: 5px;
+                   font-weight: bold;
+                }
+            }
+            .cover{
+                width:400px;
+                height: 500px;
+                margin-left: 100px;
+                img{
+                    width: 100%;
+                    height: 105%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .right{
+            width:800px;
+            margin-left: 90px;
+            padding-top: 100px;
+            .title{
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+            .rating-form{
+                .form-group{
+                    margin-top: 20px;
+                }
+                label{
+                    font-weight: bold;
+                    margin-bottom: 5px;
+
+                }
+                text-area{
+                    resize: none;
+
+                }
+                .btn-container{
+                    margin-top: 30px;
+                }
+            
+            }
+        }
+    }
+    .bottom{
+        margin-top: 50px;
+        .title{
+            margin-bottom: 30px;
+        }
+        .reviews{
+            width: 800px;
+            .review{
+                margin-bottom: 25px;
+                background-color: #a4cb0882;
+                padding: 20px;
+                border-radius: 20px;
+                .review-details{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .review-left{
+                        .author{
+                            font-weight: bold;
+                            font-size: 15px;
+                        }
+                        .author_dt{
+                            opacity: 0.6;
+                        }
+                    }
+                    .review-right{
+                        display: flex;
+                       
+                    }
+                }
+               
+            }
+            
+        }
+    }
+}
