@@ -1,27 +1,72 @@
-# Movies
+🎬 **Movies App (Angular Learning Project)**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+A simple Angular-based frontend project built to practice and demonstrate core Angular concepts like routing, standalone components, and basic UI structuring. This project showcases static content and navigation as part of learning Angular fundamentals.
 
-## Development server
+🧠 **Purpose**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project was developed as part of a hands-on learning process with Angular. It emphasizes:
 
-## Code scaffolding
+    Component creation
+    
+    Routing with parameters
+    
+    UI structuring using standalone components
+    
+    Static content rendering without backend/API integration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🚀 **Features**
 
-## Build
+    🧾 Login Page: Static form component for user login.
+    
+    🏠 Home Page: Central page after login with links to movie details.
+    
+    🎥 Movie Page: Renders static movie data based on URL params.
+    
+    🧭 Routing Setup: Clean routing using Angular's RouterModule.
+    
+    🎨 Component Styling: Basic layout using CSS.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🧱 **Project Structure**
 
-## Running unit tests
+    src/app/
+    ├── app.component.*         # Root component
+    ├── app.config.ts           # App configuration (Router + Zone setup)
+    ├── app.routes.ts           # Route definitions
+    ├── login/                  # LoginComponent (static)
+    ├── home/                   # HomeComponent (navigation or overview)
+    └── movie/                  # MovieComponent (uses route params)
+    
+⚙️ **Technologies Used**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Angular 18 with Standalone Components
+    
+    TypeScript
+    
+    HTML & CSS
+    
+    No external libraries or backend integration
 
-## Running end-to-end tests
+🧪 How to Run
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ensure you have Node.js and Angular CLI installed.
 
-## Further help
+    # 1. Install dependencies
+    npm install
+    
+    # 2. Run the app
+    ng serve
+    
+    # 3. Open in browser
+    http://localhost:4200
+    
+📌 Future Enhancements
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is currently static. Future learning steps may include:
+
+    Integrating with a movie API (e.g., TMDb)
+    
+    Adding reactive forms and validation
+    
+    Implementing authentication logic
+    
+    Applying Angular Material for UI polish
